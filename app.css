@@ -1,0 +1,181 @@
+/* base styling */
+* {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: normal;
+    line-height: 0;
+    background-color: #f0f3f4;
+}
+
+body {
+    display: flex;
+    flex: 1;
+    justify-content: center;
+}
+
+.wrapper {
+    border: 3px solid #001463;
+    display: grid;
+    grid-template-rows: repeat(9, auto);
+    grid-template-columns: 26rem;
+    text-align: left;
+    margin-top: 1rem;
+    padding: 0rem 1.5rem 2rem 1.5rem;
+    border-radius: 10px;
+    background-color: white;
+    box-shadow: #001463 0px 20px 50px -25px, #001463 0px 10px 30px -25px;
+}
+
+/* styling of sections */
+.billtotal,
+.billsplit,
+.custom,
+.totalbreakdown {
+    max-height: 8rem;
+    border-radius: 10px;
+    margin-bottom: .8rem;
+    padding-top: 1.75rem;
+}
+
+.tipcalculator {
+    max-height: fit-content;
+    border-radius: 10px;
+    margin-bottom: .8rem;
+    grid-row: 4 / span 1;
+    text-align: center;
+}
+
+.calculate {
+    text-align: center;
+    background-color: white;
+    margin-top: 1rem;
+}
+
+.custom,
+.totalbreakdown,
+.preferenceselect {
+    max-height: fit-content;
+    border-radius: 10px;
+    margin-bottom: .4rem;
+}
+
+/* grid assignments */
+.title {
+    grid-row: 1 / span 1;
+    margin-top: 1rem;
+    max-height: 4rem;
+    border-radius: 10px;
+    margin-bottom: .5rem;
+    background-color: white;
+}
+
+.billtotal {
+    grid-row: 2 / span 1;
+}
+
+.billsplit {
+    grid-row: 3 / span 1;
+}
+
+.preferenceselect {
+    grid-row: 5 / span 1;
+    text-align: center;
+    margin: .1rem .5rem .7rem 0rem;
+    font-size: 1.2rem;
+    background-color: white;
+}
+
+.custom {
+    grid-row: 6 / span 1;
+    margin-bottom: 0;
+}
+
+.calculate {
+    grid-row: 7 / span 1;
+    text-align: center;
+}
+
+.totalbreakdown {
+    grid-row: 8 / span 1;
+    margin-bottom: 1rem;
+    border-radius: 10px;
+}
+
+/* button & label styling */
+button {
+    background-color: #6f77a5;
+    color: #f0f3f4;
+    border: 0;
+    border-radius: 50%;
+    padding: 1.4rem 1rem;
+    margin: .3rem 1.5rem 1rem 1.5rem;
+    font-size: 1.1rem;
+}
+
+#twentyperctip {
+    padding: 1.4rem .9rem;
+}
+
+p {
+    position: relative;
+    font-size: 1.4rem;
+    font-weight: 500;
+    top: 34px;
+    left: 25px;
+    background-color: white;
+    color: #001463;
+}
+
+input {
+    all: unset;
+    border: 2px solid #D5E6FA;
+    border-radius: 10px;
+    padding: .75rem 5.75rem .5rem .75rem;
+    margin: 1rem 1.5rem 0rem 3.5rem;
+    font-size: 1.1rem;
+    background-color: white;
+    position: relative;
+    top: -28px;
+}
+
+#custom {
+    max-width: 1rem;
+    max-height: .6rem;
+    border: 0;
+    text-align: left;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+h2,
+h3 {
+    padding: .5rem 0rem 0rem 1rem;
+    text-align: left;
+}
+
+label {
+    text-align: left;
+    padding-left: 1rem;
+    font-size: 1.2rem;
+}
+
+h2 {
+    background-color: f0f3f4;
+}
+
+#calculator {
+    border-radius: 10px;
+}
+
+/* special action styling */
+button:hover,
+.active {
+    background-color: #3c4372;
+}
+
+input.clicked {
+    border: 2px solid #001463;
+}

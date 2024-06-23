@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tip Calculator</title>
+    <link rel="stylesheet" href="app.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <div class="wrapper">
+        <div class="title">
+            <h1>Tip Calculator</h1>
+        </div>
+        <!-- Initial data collection of bill cost & number of times it will be split -->
+        <div class="billtotal">
+            <label for="totalbill">Total bill (before tip):</label>
+            <p>$</p><input type="number" id="totalbill" required>
+        </div>
+        <div class="billsplit">
+            <label for="peoplecount">How many times should we split it?</label>
+            <p>#</p><input type="number" id="peoplecount" required>
+        </div>
+        <!-- Tip calculation via either % or dollar value -->
+        <div class="tipcalculator">
+            <h3>Tip percentage?</h3>
+            <button id="tenperctip">10</button>
+            <button id="fifteenperctip">15</button>
+            <button id="twentyperctip">20</button>
+        </div>
+        <div class="preferenceselect">
+            <h2 class="preferenceselect">OR</h2>
+        </div>
+        <div class="custom">
+            <label for="customtip">Custom Tip:</label>
+            <p>$</p><input id="customtip" type="number">
+        </div>
+        <!-- final calculations -->
+        <div class="calculate">
+            <button id="calculator">Calculate</button>
+        </div>
+        <div class="totalbreakdown">
+            <label for="totalperperson">Total per person:</label>
+            <p>$</p><input type="number" id="totalperperson">
+        </div>
+    </div>
+    <script src="app.js"></script>
+</body>
+
+</html>
